@@ -6,7 +6,8 @@
                  [hiccup "1.0.5"]
                  [ring-server "0.4.0"]
                  [org.clojure/java.jdbc "0.2.3"]
-                 [mysql/mysql-connector-java "5.1.38"]]
+                 [org.xerial/sqlite-jdbc "3.7.2"]
+                 [lib-noir "0.7.6"]]
   :plugins [[lein-ring "0.8.12"]]
   :ring {:handler guestbook.handler/app
          :init guestbook.handler/init
